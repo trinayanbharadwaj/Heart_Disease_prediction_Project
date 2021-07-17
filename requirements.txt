@@ -3,3 +3,9 @@ scikit-learn
 Flask
 gunicorn
 Jinja2
+itsdangerous
+MarkupSafe
+Werkzeug
+scipy
+matplotlib
+seaborn
