@@ -7,7 +7,7 @@ model = pickle.load(open("model.pkl", "rb"))
 
 @app.route("/")
 def home():
-    return render_template("templates/index.html")
+    return render_template("index.html")
 
 @app.route("/predict",methods=["POST"])
 def predict():
@@ -22,7 +22,7 @@ def predict():
     elif prediction_prob == 1:
        result = "Our model has predicted that you might have heart issue in the upcoming 10 years.  You have {} % chance of heart disease.".format(prob) 
         
-    return render_template("templates/index.html", predict=result)  
+    return render_template("index.html", predict=result)  
 
 if __name__ == "__main__":
     app.run(debug=True)                  
