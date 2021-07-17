@@ -9,4 +9,4 @@ Werkzeug
 scipy
 matplotlib
 seaborn
-xgboost
+xgboost==0.90
