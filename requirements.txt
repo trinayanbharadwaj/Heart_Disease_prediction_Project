@@ -1,7 +1,5 @@
-pandas
 numpy
 scikit-learn
 Flask
 gunicorn
 Jinja2
-xgboost
