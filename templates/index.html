@@ -10,7 +10,7 @@
 <h3 style="color:white;"> Enter the below fields and our model will predict the chances of you having a heart disease 
     in the upcoming 10 years</h3>    
 
-<form action = "/predict" method = "POST">
+<form action = "{{ url_for('predict')}}" method = "POST">
     
     <label for="fname" style="color:white;">Age:</label><br>
     <input type="text" name="age" style="font-size:16pt" required="required"/><br><br>
