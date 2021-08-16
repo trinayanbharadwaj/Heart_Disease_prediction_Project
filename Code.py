@@ -35,8 +35,9 @@ x = data.drop(columns="TenYearCHD")
 y = data.TenYearCHD
 
 # Fixing the imbalanced data by random oversampling, as our dataset is small.
-ros = RandomOverSampler(random_state=42)
-X_resampled, y_resampled = ros.fit_resample(x, y)
+#ros = RandomOverSampler(random_state=42)
+#X_resampled, y_resampled = ros.fit_resample(x, y)
+# this step was causing data leakage.
 
 # Splitting the data into features and target variable.
 train_x, test_x, train_y, test_y = train_test_split(X_resampled, y_resampled, test_size=0.25)
